@@ -14,6 +14,6 @@ Web servers record every client interaction inside log files. This project demon
 
 . Apache2
 
-Setup & Configuration
+**Setup & Configuration**
 1. Power on Kali Linux and Kali Purple.
 
