@@ -1,0 +1,6 @@
+**Lab Environment**
+| Component    | Role                        |
+| ------------ | --------------------------- |
+| Kali Linux   | Web Server (Log Generation) |
+| Kali Purple  | Log Analysis Workstation    |
+| Network Mode | NAT                         |
