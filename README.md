@@ -9,3 +9,11 @@ Web servers record every client interaction inside log files. This project demon
 | Kali Linux   | Web Server (Log Generation) |
 | Kali Purple  | Log Analysis Workstation    |
 | Network Mode | NAT                         |
+
+**Tools**
+
+. Apache2
+
+Setup & Configuration
+1. Power on Kali Linux and Kali Purple.
+
