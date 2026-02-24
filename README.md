@@ -14,6 +14,10 @@ Web servers record every client interaction inside log files. This project demon
 
 . Apache2
 
+
 **Setup & Configuration**
 1. Power on Kali Linux and Kali Purple.
+2. Find IP addresses:
+
+ip a
 
