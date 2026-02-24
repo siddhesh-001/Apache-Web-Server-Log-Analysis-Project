@@ -18,16 +18,26 @@ Web servers record every client interaction inside log files. This project demon
 **Setup & Configuration**
 **1.** Power on Kali Linux and Kali Purple.
 **2.** Find IP addresses:
-ip a
+_ip a_
 
 **Test communication:**
-ping <OTHER_VM_IP>
+_ping <OTHER_VM_IP>_
 
 **3.** Install Apache on Kali Linux
-sudo apt update
+_sudo apt update
 sudo apt install apache2 -y
 sudo systemctl start apache2
-sudo systemctl enable apache2
+sudo systemctl enable apache2_
 
 **Verify:**
-sudo systemctl status apache2
+_sudo systemctl status apache2_
+
+**4.** Locate Apache Logs
+_ls /var/log/apache2/_
+Important files:
+
+access.log – client requests
+
+error.log – server problems
+
+
