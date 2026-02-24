@@ -32,8 +32,9 @@ sudo systemctl enable apache2_
 **Verify:**
 _sudo systemctl status apache2_
 
-**4.** Locate Apache Logs
+**4.** Locate Apache Logs: 
 _ls /var/log/apache2/_
+
 Important files:
 
 access.log – client requests
