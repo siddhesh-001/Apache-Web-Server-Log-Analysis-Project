@@ -16,8 +16,18 @@ Web servers record every client interaction inside log files. This project demon
 
 
 **Setup & Configuration**
-1. Power on Kali Linux and Kali Purple.
-2. Find IP addresses:
-
+**1.** Power on Kali Linux and Kali Purple.
+**2.** Find IP addresses:
 ip a
 
+**Test communication:**
+ping <OTHER_VM_IP>
+
+**3.** Install Apache on Kali Linux
+sudo apt update
+sudo apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+**Verify:**
+sudo systemctl status apache2
