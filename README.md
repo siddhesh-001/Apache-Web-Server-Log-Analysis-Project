@@ -1,4 +1,4 @@
-![Web Server](https://img.shields.io/badge/Web%20Server-blue)
+<img src="https://img.shields.io/badge/Cybersecurity-red" height="50">
 
 
 This project demonstrates how to **analyze Apache web server logs to detect suspicious activity** using Linux command-line tools.
