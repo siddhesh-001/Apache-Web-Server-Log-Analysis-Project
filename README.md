@@ -13,7 +13,7 @@ This project demonstrates practical **Security Operations Center (SOC) analyst s
 
 ---
 
-# 🎯 Project Objectives
+#  Project Objectives
 
 This lab focuses on learning how to:
 
@@ -25,7 +25,7 @@ This lab focuses on learning how to:
 
 ---
 
-# 🧪 Lab Environment
+#  Lab Environment
 
 | Component | Purpose |
 |----------|---------|
