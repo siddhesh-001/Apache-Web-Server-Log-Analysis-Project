@@ -93,11 +93,17 @@ Verify Apache is running:
 sudo systemctl status apache2
 ```
 
+![Screenshot 2026-03-06 163419](https://github.com/user-attachments/assets/33922a87-20ba-4d4c-808f-ae5826e92536)
+
+
 You can also test via browser:
 
 ```
 http://localhost
 ```
+
+<img width="999" height="243" alt="image" src="https://github.com/user-attachments/assets/c6ffd9d5-33ec-4da0-bccb-c8b2a5cb7541" />
+
 
 ---
 
@@ -110,6 +116,9 @@ Check the log directory:
 ```bash
 ls /var/log/apache2/
 ```
+
+<img width="858" height="63" alt="image" src="https://github.com/user-attachments/assets/29aec571-5648-4b44-8309-48c0f643679e" />
+
 
 Important logs include:
 
@@ -131,6 +140,10 @@ Run the following command:
 ```bash
 for i in {1..70}; do curl -s http://<KALI_LINUX_IP>/login > /dev/null; done
 ```
+
+<img width="640" height="67" alt="image" src="https://github.com/user-attachments/assets/2a6eaed6-c95a-4366-ba77-ea8cb8f67fc6" />
+
+
 *> /dev/null* avoids terminal clutter
 
 Explanation:
@@ -153,6 +166,9 @@ less /var/log/apache2/access.log
 
 You should see entries with **404 status codes**, confirming that requests were logged.
 
+<img width="786" height="198" alt="image" src="https://github.com/user-attachments/assets/858d31b7-7d49-4450-8001-abb7f5321f22" />
+
+
 ---
 
 #  Step 6 — Transfer Logs for Analysis
@@ -162,6 +178,9 @@ From the **<mark>Kali Purple VM<mark>**, retrieve the logs:
 ```bash
 scp kali@<KALI_LINUX_IP>:/var/log/apache2/access.log ~/apache_access.log
 ```
+
+<img width="620" height="127" alt="image" src="https://github.com/user-attachments/assets/86c4b97e-722c-4c53-aca7-dcce2eaac628" />
+
 
 Verify the file was transferred:
 
@@ -175,6 +194,9 @@ You should see:
 apache_access.log
 ```
 
+<img width="220" height="66" alt="image" src="https://github.com/user-attachments/assets/75b55061-bad0-4f53-85f9-9fb5f39942a8" />
+
+
 ---
 
 #  Step 7 — Begin Log Analysis
@@ -186,8 +208,9 @@ apache_access.log
 ```bash
 wc -l apache_access.log
 ```
-
 This shows the total number of recorded web requests.
+
+<img width="226" height="57" alt="image" src="https://github.com/user-attachments/assets/00c68c5a-d105-467d-a6b5-ec8ed4aad2f0" />
 
 ---
 
@@ -198,6 +221,8 @@ awk '{print $1}' apache_access.log | sort | uniq -c | sort -nr | head
 ```
 
 This identifies the **most frequent visitors**.
+
+<img width="594" height="88" alt="image" src="https://github.com/user-attachments/assets/bc72822e-c32b-4451-844a-f25ac974ebfd" />
 
 ---
 
@@ -213,6 +238,9 @@ Large numbers of 404 responses often indicate:
 - automated scanning
 - reconnaissance activity
 
+<img width="351" height="79" alt="image" src="https://github.com/user-attachments/assets/0a3b49bf-6828-43a7-a1bc-3ddabc19ab8a" />
+
+
 ---
 
 ### Identify Login-Related Requests
@@ -223,6 +251,8 @@ grep -i "login" apache_access.log
 
 This helps detect **targeted attacks against login pages**.
 
+<img width="778" height="346" alt="image" src="https://github.com/user-attachments/assets/3833dcc4-638e-4941-8679-3064893cf46c" />
+
 ---
 
 ### Check Request Timing Patterns
@@ -232,6 +262,9 @@ grep -i "login" apache_access.log | head
 ```
 
 Requests occurring **within seconds of each other** may indicate automated scripts.
+
+<img width="771" height="196" alt="image" src="https://github.com/user-attachments/assets/22ea6e49-8d0c-49a1-b5b1-d8a09944b033" />
+
 
 ---
 
@@ -249,7 +282,7 @@ Log Source: Apache access.log
 
 ### Observations
 
-- 70 log entries analyzed.
+- 71 log entries analyzed.
 - All requests returned HTTP **404 Not Found**.
 - Repeated requests targeted the `/login` endpoint.
 - Requests originated primarily from IP address **192.168.217.129**.
