@@ -291,15 +291,28 @@ Log Source: Apache access.log
 
 ---
 
-### Suspicious Activity Identified
+#  Example Apache Log Entry Breakdown
 
-The request pattern indicates possible:
+Below is an example of a typical Apache access log entry:
 
-- automated scanning
-- directory brute forcing
-- credential stuffing attempts
+```
+192.168.217.129 - - [06/Mar/2026:16:41:57 +0530] "GET /login HTTP/1.1" 404 478 "-" "curl/8.18.0"
+```
 
-The repeated requests from a single host strongly suggest **scripted activity rather than normal user behavior**.
+Each part of the log entry provides useful information for investigation.
+
+| Field | Description |
+|------|-------------|
+| 192.168.217.129 | Source IP address of the client |
+| - - | User identity information (often unused) |
+| [06/Mar/2026:16:41:57 +0530] | Timestamp of the request |
+| GET | HTTP request method |
+| /login | Requested resource or endpoint |
+| HTTP/1.1 | HTTP protocol version |
+| 404 | HTTP status code returned by the server |
+| 478 | Size of the response returned by the server |
+| "-" | Referrer (page that directed the request) |
+| curl/8.18.0 | User-agent identifying the client software |
 
 ---
 
@@ -333,4 +346,4 @@ This project demonstrates:
 
 ---
 
-|
+
