@@ -117,7 +117,7 @@ The **access.log** file is the primary source for analyzing web traffic.
 
 #  Step 4 — Generate Suspicious Traffic
 
-To simulate malicious behavior, repeated requests are generated from the **<mark>Kali Purple analysis VM<mark>**.
+To simulate malicious behavior, repeated requests are generated from the **<mark>Kali Purple VM<mark>**.
 
 Run the following command:
 
