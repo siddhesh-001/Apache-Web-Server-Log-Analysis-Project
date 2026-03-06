@@ -1,4 +1,4 @@
-#  $${\color{blue}Blue}$$Apache Web Server Log Analysis Lab Project$${\color{blue}Blue}$$
+#  $${\color{blue}Blue}$$Apache Web Server Log Analysis Lab Project
 
 This project demonstrates how to **analyze Apache web server logs to detect suspicious activity** using Linux command-line tools.
 
