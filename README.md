@@ -29,8 +29,8 @@ This lab focuses on learning how to:
 
 | Component | Purpose |
 |----------|---------|
-| Kali Linux VM | Web server generating logs |
-| Kali Purple VM | Log analysis system |
+| <mark>Kali Linux VM<mark> | Web server generating logs |
+| <mark>Kali Purple VM<mark> | Log analysis system |
 | Apache Web Server | Generates web access logs |
 | Linux CLI Tools | Log analysis |
 
