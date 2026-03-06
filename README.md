@@ -1,4 +1,4 @@
-#  Apache Web Server Log Analysis Lab Project
+#  $${\color{blue}Blue}$$Apache Web Server Log Analysis Lab Project
 
 This project demonstrates how to **analyze Apache web server logs to detect suspicious activity** using Linux command-line tools.
 
@@ -58,7 +58,7 @@ Successful replies confirm that the lab systems can communicate.
 
 #  Step 2 — Install Apache Web Server
 
-On the **Kali Linux VM**:
+On the **<mark>Kali Linux VM<mark>**:
 
 Update package lists:
 
@@ -116,7 +116,7 @@ The **access.log** file is the primary source for analyzing web traffic.
 
 #  Step 4 — Generate Suspicious Traffic
 
-To simulate malicious behavior, repeated requests are generated from the **Kali Purple analysis VM**.
+To simulate malicious behavior, repeated requests are generated from the **<mark>Kali Purple analysis VM<mark>**.
 
 Run the following command:
 
@@ -137,7 +137,7 @@ This creates realistic log entries in the Apache access logs.
 
 #  Step 5 — Confirm Logs Were Generated
 
-On the **Kali Purple**, view the access log:
+On the **<mark>Kali Purple<mark>**, view the access log:
 
 ```bash
 less /var/log/apache2/access.log
@@ -149,7 +149,7 @@ You should see entries with **404 status codes**, confirming that requests were 
 
 #  Step 6 — Transfer Logs for Analysis
 
-From the **Kali Purple VM**, retrieve the logs:
+From the **<mark>Kali Purple VM<mark>**, retrieve the logs:
 
 ```bash
 scp kali@<KALI_LINUX_IP>:/var/log/apache2/access.log ~/apache_access.log
@@ -171,7 +171,7 @@ apache_access.log
 
 #  Step 7 — Begin Log Analysis
 
-# In Kali Purple VM
+# In <mark>Kali Purple VM<mark>
 
 ### Count Total Requests
 
