@@ -1,4 +1,4 @@
-![Static Badge](https://img.shields.io/badge/Apache%20Web%20Server%20Log%20Analysis%20Lab%20Project)-8A2BE2
+![Static Badge](https://img.shields.io/badge/server-Apache-red)
 
 
 This project demonstrates how to **analyze Apache web server logs to detect suspicious activity** using Linux command-line tools.
