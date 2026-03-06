@@ -25,7 +25,7 @@ This lab focuses on learning how to:
 
 ---
 
-#  Lab Environment
+# 🧪 Lab Environment
 
 | Component | Purpose |
 |----------|---------|
