@@ -46,6 +46,13 @@ Find the IP address of both systems:
 ```bash
 ip a
 ```
+**Kali Linux**
+![Screenshot 2026-03-06 155244](https://github.com/user-attachments/assets/6d1ff7b2-8384-4678-a929-45b2e9f85146)
+
+**Kali Purple**
+![Screenshot 2026-03-06 155457](https://github.com/user-attachments/assets/c6a40b54-5a9d-43fd-a311-c2be2c1e7c92)
+
+
 
 Test communication between the two machines:
 
@@ -61,10 +68,10 @@ Successful replies confirm that the lab systems can communicate.
 
 On the **<mark>Kali Linux VM<mark>**:
 
-Update package lists:
+Update & upgrade the package lists:
 
 ```bash
-sudo apt update
+sudo apt update && sudo apt upgrade
 ```
 
 Install Apache:
