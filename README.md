@@ -1,3 +1,12 @@
+---
+
+Disclaimer
+
+This repository is intended for cybersecurity research and educational purposes only.
+All log data used in this project is for learning and analysis within authorized environments.
+
+---
+
 # Apache Web Server Log Analysis Lab Project
 
 
