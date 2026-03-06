@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/Cybersecurity-red" height="200">
+# Apache Web Server Log Analysis Lab Project
 
 
 This project demonstrates how to **analyze Apache web server logs to detect suspicious activity** using Linux command-line tools.
