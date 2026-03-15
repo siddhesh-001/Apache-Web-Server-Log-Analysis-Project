@@ -10,7 +10,7 @@ All log data used in this project is for learning and analysis within authorized
 # Apache Web Server Log Analysis Lab Project
 
 
- project demonstrates how to **analyze Apache web server logs to detect suspicious activity** using Linux command-line tools.
+This project demonstrates how to **analyze Apache web server logs to detect suspicious activity** using Linux command-line tools.
 
 The lab simulates **automated scanning and brute-force style web requests** and investigates the resulting logs to identify abnormal behavior.
 
